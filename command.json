@@ -1,0 +1,10 @@
+{
+    "say_hello" : {
+        "examples" : ["привет", "здравствуй", "добрый день", "hello", "ку", "qq"],
+        "commands" : "say_hello"
+    },
+    "say_time" : {
+        "examples" : ["время", "времени", "time"],
+        "commands" : "say_time"
+    }
+}
