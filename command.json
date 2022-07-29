@@ -6,5 +6,13 @@
     "say_time" : {
         "examples" : ["время", "времени", "time"],
         "commands" : "say_time"
+    },
+    "on_light" : {
+        "examples" : ["свет", "свети", "light"],
+        "commands" : "on_light"
+    },
+    "off_light" : {
+        "examples" : ["темно"],
+        "commands" : "off_light"
     }
 }
