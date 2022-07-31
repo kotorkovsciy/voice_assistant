@@ -2,6 +2,22 @@ from speech_recognition import Recognizer, Microphone
 from json import load, loads, dumps
 from plugins import *
 
+def trigger_record():
+    while True:
+        try:
+            r = Recognizer()
+
+            with Microphone(device_index=2) as source:
+                print('Скажи муся...')
+                audio = r.listen(source)
+
+            query = r.recognize_google(audio, language='ru-RU')
+            for x in query.split(' '):
+                for y in list(out_dir('command.json').items()):
+                    if x.lower() in "муся":  
+                        record_volume()  
+        except Exception as e:
+            print(e)
 
 def record_volume():
     r = Recognizer()
